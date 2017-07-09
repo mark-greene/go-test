@@ -11,17 +11,17 @@ Must be built for the same platform as the AWS Instance.
 /status
 /instance
 ```
-### To Build
+### To Build and Test
 ```
 go get github.com/mark-greene/go-test
+cd src/github.com/mark-greene/go-test/
 go install .
+PORT=8080 go-test &
+curl http://localhost:8080/status
 ```
-### To Run
+### To Run and Test on AWS instaqnce
 ```
 export PORT=80
-sudo -E ./go-test
-```
-### To Test
-```
-curl http://localhost/status
+sudo -E ./go-test &
+curl http://localhost/instance
 ```
