@@ -1,8 +1,8 @@
 # go-test
-Go-Test golang HTTP test server
+Golang HTTP test server
 
-Only runs on an AWS instance as it uses the AWS API `http://169.254.169.254/latest/dynamic/instance-identity/document`.
-Must be built on the same platform as the AWS Instance.
+Runs on an AWS instance as it uses the AWS API `http://169.254.169.254/latest/dynamic/instance-identity/document`.
+Must be built for the same platform as the AWS Instance.
 
 ## Routes
 ```
