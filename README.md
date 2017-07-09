@@ -13,6 +13,7 @@ Must be built for the same platform as the AWS Instance.
 ```
 ### To Build
 ```
+go get github.com/mark-greene/go-test
 go install .
 ```
 ### To Run
